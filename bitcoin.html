@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Crypto Price Checker</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet"/>
+    <div class="topnav">
+        <a class="active" href="popup.html">Home</a>
+        <a href="bitcoin.html">Bitcoin</a>
+        <a href="xrp.html">XRP</a>
+        <a href="ether.html">Ethereum</a>
+      </div>
+    </head>
+    <body>
+        <div class="modal-header">
+            <h1 class="logo">
+                <img src="images/clogo.png" alt="Crypto Price Checker" class="logo-icon"> Crypto Price Checker <span class="version"></span>
+            </h1>
+        </div>
+        <div class="modal-content">
+            <h2>Bitcoin</h2>
+        <button class="collapsible">1. General</button>
+        <div class="content">
+            <button class="collapsible">1.0 What is Bitcoin?</button>
+            <div class="content">
+                <p>According to Bitcoin.org’s whitepaper, Bitcoin is “a purely peer-to-peer version of electronic cash [that] would allow online payments to be sent directly from one party to another without going through a financial institution.” In simpler terms, Bitcoin is an online currency that can be used in transactions without any government or superior’s supervision. With a complex address of numbers and characters, each person has a unique wallet to both send and receive coins.</p>
+            </div>
+            <button class="collapsible">1.1 ​Who created Bitcoin?</button>
+            <div class="content">
+                <p>Bitcoin was created by an unknown person using the pseudonym Satoshi Nakamoto.</p>
+            </div>
+            <button class="collapsible">1.2 How does Bitcoin work?</button>
+            <div class="content">
+                <p>Bitcoin, like all currencies, relies upon people’s interest and belief in the worth of the coin. Because it is an electronic currency, it has no real intrinsic value. However, its decentralization has generated great interest in the coin. Unlike some new coins, Bitcoin does not cover a specific niche or industry, but rather is simply a currency for transactions and exchanges.</p>
+            </div>
+            <button class="collapsible">1.3 How does one get Bitcoin?</button>
+            <div class="content">
+                <p>All Bitcoins are mined, through computers or (now) specialized ASIC miners. In the past, the mathematical problem rewarding Bitcoins was easily solved. Now however, with a large supply of Bitcoins already generated, mining for Bitcoins with only computers is too costly and too limited. Mining farms have been introduced in low electricity cost areas, with technology specified for solving the SHA-256 mathematical problem. Now that Bitcoin has been more spread, there are other ways like faucets or giveaways to earn small amounts of Bitcoins.</p>
+            </div>
+        </div>
+
+        <button class="collapsible">2. Economics</button>
+        <div class="content">
+            <button class="collapsible">2.0 How does one make a Bitcoin payment?</button>
+            <div class="content">
+                <p>All that’s needed to complete a Bitcoin payment is a wallet and having Bitcoins. Similarly to paying with cash (in this example, I’ll use US Dollars), you would simply send your Bitcoins from your wallet to another person’s address (I’ll discuss wallets further below). Receiving Bitcoins is similar, just like how someone else would give you cash for you to put in your wallet, someone else will send Bitcoins from their wallet to your wallet’s public address.</p>
+            </div>
+            <button class="collapsible">2.1 Advantages to accumulating Bitcoin?</button>
+            <div class="content">
+                <p>The greatest value of cryptocurrency like Bitcoin is its decentralization. Because most currencies are dependent on a countries economy, currencies can quickly lose value due to a countries political unrest. Bitcoin however, escapes that trap with its no leader formula, and is dependent solely (besides the laws from each country) on the market value, the supply and demand of Bitcoin.</p>
+            </div>
+            <button class="collapsible">2.2 Disadvantages to investing in Bitcoin?</button>
+            <div class="content">
+                <p>Bitcoin, like all cryptocurrency is known in the market for its volatility. It has frequent highs and lows and it’s very difficult to say when the currency will reach stability (or if it ever will). Its volatility brings a red flag when it comes to investing in the currency. In addition, with Bitcoin’s high transaction rates and growth, scalability issues have arisen. Since the network limits transactions to about 3.3 to 7 per second, it creates a bottleneck situation, where many transactions are waiting to be sent out, but unable to be filled, drastically slowing processing rates.</p>
+            </div>
+        </div>
+
+        <button class="collapsible">3. Use</button>
+        <div class="content">
+            <button class="collapsible">3.0 Best wallet options for Bitcoin?</button>
+            <div class="content">
+                <p>Online Exchanges: Easiest for exchanging
+                    Coinbase: Coinbase remains one of the largest Bitcoin exchanges in the world, a platform where users are able to buy and sell Bitcoin, as well as exchange Bitcoins for other coins, like Ethereum and Litecoin. However, the risks of storing large amounts of Bitcoins on Online Exchanges is the greatest, with possibilities of getting hacked.
+                    Other Online Exchanges: Bittrex, Binance (These two support more coins than Coinbase)</p>
+            </div>
+            <button class="collapsible">3.1 What happens if you lose Bitcoin?</button>
+            <div class="content">
+                <p>The way to lose Bitcoin is to forget your password to your virtual wallet or to get your account shut down/hacked. If you lose Bitcoin in these ways, there is unfortunately no way to recover it. Most of the times the Bitcoin that is lost remains lost and that amount is taken away from the world pot of Bitcoin. However, because there is a limit on the amount of Bitcoin to be produced, the price of each Bitcoin will rise.</p>
+            </div>
+        </div>
+        </body>
+</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>
