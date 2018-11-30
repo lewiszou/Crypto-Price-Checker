@@ -12,5 +12,3 @@ data: $form.serializeObject()
 // do something
 );
 })
-
-var script_url = 'https://script.google.com/macros/s/AKfycbz-sJ6q2H2SLhLSo06up9QTu62oeM90YQN-7nOLPauNSYxVPRuM/exec'
