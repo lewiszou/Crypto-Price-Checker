@@ -1,5 +1,9 @@
 /* Example in Node.js ES6 using request-promise, concepts should translate to your language of choice */
-  
+document.querySelector('form').onsubmit = function(e) {
+let source = document.querySelector('input[name=source]').value;
+let destination = document.querySelector('input[name=destination]').value;
+
+
 const rp = require('request-promise');
 const requestOptions = {
   method: 'GET',
@@ -21,3 +25,4 @@ rp(requestOptions).then(response => {
 }).catch((err) => {
   console.log('API call error:', err.message);
 });
+};
