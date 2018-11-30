@@ -8,10 +8,10 @@
         "https://www.coingecko.com/en/widgets/"
       ],
     "background": {
-        "scripts": ["jquery-3.3.1.js", "form.js"],
+        "scripts": ["jquery-3.3.1.js"],
         "persistent": false
     },  
-    "content_security_policy": "script-src 'self' https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js https://widgets.coingecko.com/coingecko-beam-widget.js; object-src 'self'",
     "content_scripts": [
         {
             "matches": [
@@ -19,8 +19,7 @@
             ],
 
             "js": [ 
-                "jquery-3.3.1.js",
-                "form.js" ]
+                "jquery-3.3.1.js"]
         } 
     ],
     "browser_action": 

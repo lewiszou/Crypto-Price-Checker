@@ -12,7 +12,7 @@
         <a href="popup.html">Home</a>
         <a href="search.html">Rank</a>
         <a href="request.html">Request</a>
-        <a href="news.html">News</a>
+        <a class="active" href="news.html">News</a>
       </div>
     <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
     <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget>
@@ -24,22 +24,12 @@
             </h1>
         </div>
         <div class="modal-content">
-            
-            <form name="calculator" id="calculator">
-                <div class="form-group">
-                    <input autocomplete="off" autofocus class="form-control" name="source" placeholder="Currency 1" type="text">
-                </div>
-                <div class="form-group">
-                    <input autocomplete="off" class="form-control" name="destination" placeholder="Currency 2" type="text">
-                </div>
-                <button id="submit" class="btn btn-primary" type="submit">Convert</button>
-            </form>
-
-            
-        <p id="output"></p>
+            <h2>News</h2>
+            <script src="https://widgets.coingecko.com/coingecko-beam-widget.js"></script>
+            <coingecko-beam-widget  type="all" height="300" locale="en"></coingecko-beam-widget>
         </div>
     </body>
     <br>
     <br>
 </html>
-<script src="node.js"></script>
+
