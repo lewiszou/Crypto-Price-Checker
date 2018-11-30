@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Crypto Price Checker",
     "description": "Check crypto prices!",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "icons": {"128": "icon_128.png"},
     "browser_action": 
     {
