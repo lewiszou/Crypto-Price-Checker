@@ -72,9 +72,9 @@ overflow: hidden;
 float: left;
 color: #f2f2f2;
 text-align: center;
-padding: 14px 16px;
+padding: 10px 10px;
 text-decoration: none;
-font-size: 17px;
+font-size: 15px;
 }
 
 /* Change the color of links on hover */
@@ -114,9 +114,9 @@ color: white;
 }
 
 input[type=text], select {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 5px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -124,8 +124,8 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
+    width: 50%;
+    background-color: #3cba6c;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
