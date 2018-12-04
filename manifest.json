@@ -5,13 +5,14 @@
     "version": "1.0.6",
     "icons": {"128": "icon_128.png"},
     "permissions": [
-        "https://www.coingecko.com/en/widgets/"
+        "https://www.coingecko.com/en/widgets/",
+        "https://www.cryptonator.com/ui/js/widget/"
       ],
     "background": {
         "scripts": ["jquery-3.3.1.js"],
         "persistent": false
     },  
-    "content_security_policy": "script-src 'self' https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js https://widgets.coingecko.com/coingecko-beam-widget.js; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://www.cryptonator.com/ui/js/widget/calc_widget.js https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js https://widgets.coingecko.com/coingecko-beam-widget.js; object-src 'self'",
     "content_scripts": [
         {
             "matches": [
