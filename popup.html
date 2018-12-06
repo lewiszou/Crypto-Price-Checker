@@ -1,3 +1,12 @@
+<!--
+    Authors: Lewis Zou and Junu Lee
+    Project: Crypto Price Checker
+
+    popup.html
+    This html document is the first html page the user sees when clicking on the extension icon. 
+    It contains the list of the Top 100 coins on the market. 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,16 +14,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Crypto Price Checker</title>
+        <!-- Stylesheet access provided by Google API; https://fonts.googleapis.com/css?family=Open+Sans -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+        <!-- Bootstrap formmating; https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Local CSS stylesheet -->
         <link href="styles.css" rel="stylesheet"/>
+    <!-- Navigation bar -->
     <div class="topnav">
         <a class="active" href="popup.html">Home</a>
         <a href="search.html">Search</a>
-        <a href="request.html">Convert</a>
+        <a href="convert.html">Convert</a>
         <a href="news.html">News</a>
         <a href="faq.html">FAQ</a>
-      </div>
+    </div>
+    <!-- Marque widget powered by CoinGecko; https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js -->
     <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
     <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget> 
     </head>
@@ -28,7 +42,19 @@
             <h2>Top 100 Coins</h2>
         </div>
         <div class="modal-content">
-            <div style="height:5979px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 99%;"><div style="height:5959px;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=100&pref_coin_id=1505&graph=yes" width="100%" height="5955" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing:content-box; margin: 3px 6px 10px 0px; font-family: Verdana, Tahoma, Arial, sans-serif;">powered by&nbsp;<a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none;font-size:11px">Coinlib</a></div></div>
+            <div style="height:5979px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 99%;">
+                <div style="height:5959px;">
+                    <!-- Coin List widget powered by Coinlib; https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=100&pref_coin_id=1505&graph=yes -->
+                    <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=100&pref_coin_id=1505&graph=yes" width="100%" height="5955" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
+                    </iframe>
+                </div>
+                <div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing:content-box; margin: 3px 6px 10px 0px; font-family: Verdana, Tahoma, Arial, sans-serif;">
+                    Powered by&nbsp;
+                    <a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none;font-size:11px">
+                        Coinlib
+                    </a>
+                </div>
+            </div>
         </div>
     <br>
     <br>

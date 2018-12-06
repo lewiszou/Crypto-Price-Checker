@@ -1,3 +1,12 @@
+<!--
+    Authors: Lewis Zou and Junu Lee
+    Project: Crypto Price Checker
+
+    news.html
+    This html document contains the news widget, which has up-to-date news alerts regarding
+    cryptocurrency. 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,18 +14,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Crypto Price Checker</title>
+        <!-- Stylesheet access provided by Google API; https://fonts.googleapis.com/css?family=Open+Sans -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+        <!-- Bootstrap formmating; https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Local CSS stylesheet -->
         <link href="styles.css" rel="stylesheet"/>
+    <!-- Navigation bar -->
     <div class="topnav">
-        <a href="popup.html">Home</a>
+        <a class="active" href="popup.html">Home</a>
         <a href="search.html">Search</a>
-        <a href="request.html">Convert</a>
-        <a class="active" href="news.html">News</a>
+        <a href="convert.html">Convert</a>
+        <a href="news.html">News</a>
         <a href="faq.html">FAQ</a>
-      </div>
+    </div>
+    <!-- Marque widget powered by CoinGecko; https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js -->
     <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
-    <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget>
+    <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget> 
     </head>
     <body>
         <div class="modal-header">
@@ -26,6 +40,7 @@
         </div>
         <div class="modal-content">
             <h2>Recent News</h2>
+            <!-- News widget powered by CoinGecko; https://widgets.coingecko.com/coingecko-beam-widget.js -->
             <script src="https://widgets.coingecko.com/coingecko-beam-widget.js"></script>
             <coingecko-beam-widget  type="all" height="300" locale="en"></coingecko-beam-widget>
         </div>

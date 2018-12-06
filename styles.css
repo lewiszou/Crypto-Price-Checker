@@ -1,3 +1,10 @@
+/*  Authors: Lewis Zou and Junu Lee
+*   Project: Crypto Price Checker
+*   
+*   styles.css
+*   This is the local CSS stylesheet that determines the aesthetics of the extension.
+*/
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;

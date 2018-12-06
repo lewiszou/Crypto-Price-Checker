@@ -1,3 +1,12 @@
+<!--
+    Authors: Lewis Zou and Junu Lee
+    Project: Crypto Price Checker
+
+    search.html
+    This html document functions to let the user select one coin in the dropdown menu; the widget then returns
+    analytical data regarding the coin. 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,20 +14,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Crypto Price Checker</title>
+        <!-- Stylesheet access provided by Google API; https://fonts.googleapis.com/css?family=Open+Sans -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+        <!-- Bootstrap formmating; https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Local CSS stylesheet -->
         <link href="styles.css" rel="stylesheet"/>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <!-- Navigation bar -->
     <div class="topnav">
-        <a href="popup.html">Home</a>
-        <a class="active" href="search.html">Search</a>
-        <a href="request.html">Convert</a>
+        <a class="active" href="popup.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="convert.html">Convert</a>
         <a href="news.html">News</a>
         <a href="faq.html">FAQ</a>
     </div>
+    <!-- Marque widget powered by CoinGecko; https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js -->
     <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
-    <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget>
+    <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget> 
     </head>
     <body>
         <div class="modal-header">
@@ -32,6 +44,8 @@
         <div class="modal-content">
             <form>
                 <form action="/action_page.php">
+                    <!-- The dropdown menu can be extended to include more coins in the future -->
+                    <!-- The value of each selection is the coin ID specific to Coinlib-->
                     <label for="country">Select Coin</label>
                     <select id="country" name="country">
                         <option value="859">1. Bitcoin</option>
@@ -72,4 +86,5 @@
         <br>
     </div>
 </html>
+<!-- Info widget powered by Coinlib; https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=1505&pref_coin_id=1505 --> 
 <script src="search.js"></script>
